@@ -6,7 +6,7 @@ const createCard = ({ name, info, image, price }) => {
 	cardHeader.classList = 'relative group-open:pb-60 transition-all duration-500 list-none'
 
 	const cardTitle = document.createElement('div')
-	cardTitle.className = 'flex items-center gap-2 md:gap-6 p-6 bg-white/75 dark:bg-zinc-900/75  group-open:bg-zinc-300 group-open:dark:bg-zinc-800 transition duration-500'
+	cardTitle.className = 'flex items-center gap-2 md:gap-8 p-6 bg-white/75 dark:bg-zinc-900/75  group-open:bg-zinc-300 group-open:dark:bg-zinc-800 transition duration-500'
 	cardTitle.onclick = () => card.toggleAttribute('open')
 
 	const cardInfo = document.createElement('div')
