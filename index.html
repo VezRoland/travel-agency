@@ -3,6 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 	<script src="https://cdn.tailwindcss.com"></script>
 	<script src="https://kit.fontawesome.com/ab85686315.js" crossorigin="anonymous"></script>
 	<script defer src="script.js"></script>
@@ -10,10 +13,13 @@
 </head>
 
 <body class="bg-white dark:bg-zinc-900 transition duration-500">
-	<button class="fixed right-6 top-6 w-10 grid place-items-center aspect-square rounded-full bg-zinc-300 dark:bg-zinc-800" onclick="switchTheme()">
+	<button class="z-10 fixed right-6 top-6 w-10 grid place-items-center aspect-square rounded-full bg-zinc-300 dark:bg-zinc-800" onclick="switchTheme()">
 		<i class="fa-solid fa-moon text-zinc-900 dark:text-zinc-300" id="theme-icon"></i>
 	</button>
 
-	<main class="cards max-w-4xl flex flex-col gap-6 p-6 m-auto"></main>
+	<main class="max-w-4xl flex flex-col gap-12 p-6 py-12 m-auto">
+		<h1 class="text-4xl font-bold text-zinc-900 dark:text-white">Travel Agency</h1>
+		<section class="cards flex flex-col gap-6"></section>
+	</main>
 </body>
 </html>
